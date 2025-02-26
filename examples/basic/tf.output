@@ -1,0 +1,382 @@
+iam_repository_content = {
+  "0" = {
+    "best_practices" = [
+      "Always follow the principle of least privilege when creating IAM roles and policies",
+      "Use Terraform modules to keep your code DRY (Don't Repeat Yourself)",
+      "Secure your AWS credentials and never commit them to your repository",
+      "Use version control to keep track of changes to your infrastructure",
+      "Always test your Terraform code before applying changes to your live environment",
+    ]
+    "documentation_source" = [
+      "https://github.com/hashicorp/terraform",
+      "https://github.com/aws/aws-sdk",
+      "https://github.com/awsdocs/aws-doc-sdk-examples",
+    ]
+    "readme_content" = <<-EOT
+    # terraform-aws-secure-infra
+    This project is a Terraform module for automating AWS infrastructure deployment. The focus of this project is on security best practices and cost optimization. The 'iam-roles' repository within this project is used to create IAM roles and policies following the principle of least privilege.
+    
+    ## Getting Started
+    Clone this repository to your local machine and navigate into the 'iam-roles' directory. Run 'terraform init' to initialize your Terraform workspace. You can then use 'terraform apply' to create your infrastructure.
+    
+    ## Contributing
+    We welcome contributions to this project. Please submit a pull request with your proposed changes and we will review them as soon as possible.
+    
+    ## License
+    This project is licensed under the MIT license.
+    
+    ## Contact
+    If you have any questions, please open an issue and we will get back to you as soon as possible.
+    EOT
+    "suggested_extensions" = [
+      "HashiCorp Terraform",
+      "AWS Toolkit for Visual Studio Code",
+      "Visual Studio IntelliCode",
+      "GitLens — Git supercharged",
+      "Terraform Autocomplete",
+    ]
+  }
+  "1" = {
+    "best_practices" = [
+      "Always use version control for your terraform files",
+      "Never hard-code credentials inside the terraform files",
+      "Use module structure for reusing the terraform code",
+      "Always set up remote state while working in a team",
+      "Encrypt sensitive data using AWS KMS",
+      "Use IAM roles for providing permissions instead of IAM users for security",
+      "Regularly rotate and audit IAM roles",
+    ]
+    "documentation_source" = [
+      "https://github.com/hashicorp/terraform",
+      "https://github.com/awsdocs/aws-doc-sdk-examples",
+      "https://github.com/hashicorp/terraform-aws-provider",
+      "https://github.com/aws/aws-sdk",
+    ]
+    "readme_content" = <<-EOT
+    # terraform-aws-secure-infra
+     This repository, 'iam-roles', under the organization 'my-github-organization', is a part of the 'terraform-aws-secure-infra' project. The project is a Terraform module designed for automating AWS infrastructure deployment. It emphasizes on security best practices and cost optimization. 
+    
+     The 'iam-roles' repository specifically implements cross-account access patterns for secure multi-account deployments. 
+    
+     ## Tags 
+     ### Project Tags: 
+     terraform, aws, security, infrastructure 
+     ### Repository Tags: 
+     iam, security, roles
+    EOT
+    "suggested_extensions" = [
+      "HashiCorp Terraform",
+      "AWS Toolkit for Visual Studio Code",
+      "Terraform Autocomplete",
+      "Terraform Visual",
+      "Terraform Linter",
+    ]
+  }
+}
+main_documentation = [
+  "https://github.com/terraform-aws-modules/docs",
+  "https://github.com/awsdocs/aws-doc-sdk-examples",
+  "https://github.com/terraform-providers/terraform-provider-aws",
+]
+main_readme = {
+  "best_practices" = [
+    "Ensure adherence to the Terraform Style Guide",
+    "Use Version Pinning for AWS and Terraform Providers to ensure your infrastructure remains stable",
+    "Split up your Terraform code into logical modules to promote reusability and maintainability",
+    "Implement AWS Security best practices such as encryption at rest and in transit, secure access control, and regular auditing",
+    "Regularly update your AWS and Terraform SDKs to access the latest security patches and features",
+    "Always use cost optimization techniques in AWS like choosing right instance type, auto-scaling, and reserved instances",
+  ]
+  "copilot_instructions" = "This repository relies on the Infrastructure as Code tool, Terraform, to provision AWS resources securely and cost-effectively. As an AI Copilot, your role is to assist in code modification, bug fixing, offer code completion, and stay up-to-date with the latest Terraform and AWS SDK changes. Additionally, assist in writing secure and cost-efficient infrastructure code."
+  "documentation_source" = [
+    "https://github.com/terraform-aws-modules/docs",
+    "https://github.com/awsdocs/aws-doc-sdk-examples",
+    "https://github.com/terraform-providers/terraform-provider-aws",
+  ]
+  "readme_content" = <<-EOT
+  # Terraform AWS Secure Infrastructure
+  This repository, terraform-aws-secure-infra, under the my-github-organization is dedicated to automating AWS infrastructure deployment. It focuses on security best practices and cost optimization. This module is written using Terraform, a popular Infrastructure as Code (IaC) tool, to provide a hands-off approach to manage your AWS services securely and cost-effectively.
+  
+  ## Prerequisites
+  - AWS Account
+  - Terraform installed
+  
+  ## Getting Started
+  - Clone this repository
+  - Configure your AWS credentials
+  - Navigate to the root directory and run `terraform init`
+  - Run `terraform plan` to view the provisioning plan
+  - Finally, run `terraform apply`
+  
+  ## Features
+  This Terraform module includes the following AWS resources:
+  
+  ## Contributing
+  We welcome contributions to the repository. Please ensure your code adheres to the best practices mentioned in the `best_practices` file.
+  
+  ## License
+  This project is licensed under the MIT License. For more details, see the LICENSE file.
+  EOT
+  "repository_results" = {
+    "core-vpc" = {
+      "0" = {
+        "best_practices" = [
+          "Always use version control for your Terraform code",
+          "Follow the principle of least privilege",
+          "Ensure all data that is stored is encrypted, both at rest and in transit",
+          "Design for failure and nothing will fail",
+          "Ensure that all your AWS services that can be are within a Virtual Private Cloud (VPC)",
+          "Use multiple availability zones to ensure high availability",
+          "Make use of AWS managed services wherever possible for greater scalability and ease of management",
+        ]
+        "documentation_source" = [
+          "https://github.com/terraform-aws-modules/terraform-aws-vpc",
+          "https://github.com/terraform-providers/terraform-provider-aws",
+          "https://github.com/awslabs/aws-security-benchmark",
+        ]
+        "readme_content" = <<-EOT
+        # terraform-aws-secure-infra
+        
+        This project, 'terraform-aws-secure-infra', is a Terraform module focused on automating AWS infrastructure deployment with an emphasis on security best practices and cost optimization. The 'core-vpc' repository within this project is specifically designed to create a secure VPC architecture with public and private subnets across multiple availability zones.
+        
+        ## Tags
+        
+        This project is tagged with: terraform, aws, security, infrastructure.
+        
+        The 'core-vpc' repository is tagged with: networking, vpc, subnets.
+        
+        ## Usage
+        
+        *Instructions on how to use the module and how to contribute to the project*
+        
+        ## License
+        
+        *Information about the license*
+        EOT
+        "suggested_extensions" = [
+          "HashiCorp Terraform",
+          "AWS Toolkit for Visual Studio Code",
+          "Visual Studio IntelliCode",
+          "GitHub Pull Requests and Issues",
+        ]
+      }
+      "1" = {
+        "best_practices" = [
+          "Always use version control systems",
+          "Keep the Terraform code as modular as possible",
+          "Use remote state management to share state between team members",
+          "Encrypt sensitive data in Terraform",
+          "Use a consistent naming convention",
+          "Secure access to AWS resources using IAM roles and policies",
+        ]
+        "documentation_source" = [
+          "https://github.com/terraform-aws-modules/terraform-aws-vpc",
+          "https://github.com/terraform-providers/terraform-provider-aws",
+          "https://github.com/terraform-providers/terraform-provider-aws/tree/master/examples/network-acl",
+        ]
+        "readme_content" = <<-EOT
+        # terraform-aws-secure-infra
+        This project is a Terraform module for automating the deployment of AWS infrastructure, with a strong focus on security best practices and cost optimization.
+        
+        ## core-vpc Repository
+        This repository contains the implementation of network ACLs and security groups following the best practices for AWS networking. It is part of the larger terraform-aws-secure-infra project.
+        
+        ## Getting Started
+        You can clone this repository to your local machine.
+        
+        ## Prerequisites
+        - AWS account
+        - Terraform installed
+        
+        ## Usage
+        - Initialize the Terraform provider
+        - Create an execution plan
+        - Apply the execution plan
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        ## License
+        MIT
+        EOT
+        "suggested_extensions" = [
+          "HashiCorp Terraform",
+          "AWS Toolkit for Visual Studio Code",
+          "GitHub Pull Requests and Issues",
+          "Rainbow CSV",
+        ]
+      }
+    }
+    "iam-roles" = {
+      "0" = {
+        "best_practices" = [
+          "Always follow the principle of least privilege when creating IAM roles and policies",
+          "Use Terraform modules to keep your code DRY (Don't Repeat Yourself)",
+          "Secure your AWS credentials and never commit them to your repository",
+          "Use version control to keep track of changes to your infrastructure",
+          "Always test your Terraform code before applying changes to your live environment",
+        ]
+        "documentation_source" = [
+          "https://github.com/hashicorp/terraform",
+          "https://github.com/aws/aws-sdk",
+          "https://github.com/awsdocs/aws-doc-sdk-examples",
+        ]
+        "readme_content" = <<-EOT
+        # terraform-aws-secure-infra
+        This project is a Terraform module for automating AWS infrastructure deployment. The focus of this project is on security best practices and cost optimization. The 'iam-roles' repository within this project is used to create IAM roles and policies following the principle of least privilege.
+        
+        ## Getting Started
+        Clone this repository to your local machine and navigate into the 'iam-roles' directory. Run 'terraform init' to initialize your Terraform workspace. You can then use 'terraform apply' to create your infrastructure.
+        
+        ## Contributing
+        We welcome contributions to this project. Please submit a pull request with your proposed changes and we will review them as soon as possible.
+        
+        ## License
+        This project is licensed under the MIT license.
+        
+        ## Contact
+        If you have any questions, please open an issue and we will get back to you as soon as possible.
+        EOT
+        "suggested_extensions" = [
+          "HashiCorp Terraform",
+          "AWS Toolkit for Visual Studio Code",
+          "Visual Studio IntelliCode",
+          "GitLens — Git supercharged",
+          "Terraform Autocomplete",
+        ]
+      }
+      "1" = {
+        "best_practices" = [
+          "Always use version control for your terraform files",
+          "Never hard-code credentials inside the terraform files",
+          "Use module structure for reusing the terraform code",
+          "Always set up remote state while working in a team",
+          "Encrypt sensitive data using AWS KMS",
+          "Use IAM roles for providing permissions instead of IAM users for security",
+          "Regularly rotate and audit IAM roles",
+        ]
+        "documentation_source" = [
+          "https://github.com/hashicorp/terraform",
+          "https://github.com/awsdocs/aws-doc-sdk-examples",
+          "https://github.com/hashicorp/terraform-aws-provider",
+          "https://github.com/aws/aws-sdk",
+        ]
+        "readme_content" = <<-EOT
+        # terraform-aws-secure-infra
+         This repository, 'iam-roles', under the organization 'my-github-organization', is a part of the 'terraform-aws-secure-infra' project. The project is a Terraform module designed for automating AWS infrastructure deployment. It emphasizes on security best practices and cost optimization. 
+        
+         The 'iam-roles' repository specifically implements cross-account access patterns for secure multi-account deployments. 
+        
+         ## Tags 
+         ### Project Tags: 
+         terraform, aws, security, infrastructure 
+         ### Repository Tags: 
+         iam, security, roles
+        EOT
+        "suggested_extensions" = [
+          "HashiCorp Terraform",
+          "AWS Toolkit for Visual Studio Code",
+          "Terraform Autocomplete",
+          "Terraform Visual",
+          "Terraform Linter",
+        ]
+      }
+    }
+  }
+  "suggested_extensions" = [
+    "HashiCorp Terraform",
+    "AWS Toolkit for Visual Studio Code",
+    "Terraform Autocomplete",
+    "Terraform Visual",
+    "GitLens — Git supercharged",
+  ]
+}
+vpc_repository_content = {
+  "0" = {
+    "best_practices" = [
+      "Always use version control for your Terraform code",
+      "Follow the principle of least privilege",
+      "Ensure all data that is stored is encrypted, both at rest and in transit",
+      "Design for failure and nothing will fail",
+      "Ensure that all your AWS services that can be are within a Virtual Private Cloud (VPC)",
+      "Use multiple availability zones to ensure high availability",
+      "Make use of AWS managed services wherever possible for greater scalability and ease of management",
+    ]
+    "documentation_source" = [
+      "https://github.com/terraform-aws-modules/terraform-aws-vpc",
+      "https://github.com/terraform-providers/terraform-provider-aws",
+      "https://github.com/awslabs/aws-security-benchmark",
+    ]
+    "readme_content" = <<-EOT
+    # terraform-aws-secure-infra
+    
+    This project, 'terraform-aws-secure-infra', is a Terraform module focused on automating AWS infrastructure deployment with an emphasis on security best practices and cost optimization. The 'core-vpc' repository within this project is specifically designed to create a secure VPC architecture with public and private subnets across multiple availability zones.
+    
+    ## Tags
+    
+    This project is tagged with: terraform, aws, security, infrastructure.
+    
+    The 'core-vpc' repository is tagged with: networking, vpc, subnets.
+    
+    ## Usage
+    
+    *Instructions on how to use the module and how to contribute to the project*
+    
+    ## License
+    
+    *Information about the license*
+    EOT
+    "suggested_extensions" = [
+      "HashiCorp Terraform",
+      "AWS Toolkit for Visual Studio Code",
+      "Visual Studio IntelliCode",
+      "GitHub Pull Requests and Issues",
+    ]
+  }
+  "1" = {
+    "best_practices" = [
+      "Always use version control systems",
+      "Keep the Terraform code as modular as possible",
+      "Use remote state management to share state between team members",
+      "Encrypt sensitive data in Terraform",
+      "Use a consistent naming convention",
+      "Secure access to AWS resources using IAM roles and policies",
+    ]
+    "documentation_source" = [
+      "https://github.com/terraform-aws-modules/terraform-aws-vpc",
+      "https://github.com/terraform-providers/terraform-provider-aws",
+      "https://github.com/terraform-providers/terraform-provider-aws/tree/master/examples/network-acl",
+    ]
+    "readme_content" = <<-EOT
+    # terraform-aws-secure-infra
+    This project is a Terraform module for automating the deployment of AWS infrastructure, with a strong focus on security best practices and cost optimization.
+    
+    ## core-vpc Repository
+    This repository contains the implementation of network ACLs and security groups following the best practices for AWS networking. It is part of the larger terraform-aws-secure-infra project.
+    
+    ## Getting Started
+    You can clone this repository to your local machine.
+    
+    ## Prerequisites
+    - AWS account
+    - Terraform installed
+    
+    ## Usage
+    - Initialize the Terraform provider
+    - Create an execution plan
+    - Apply the execution plan
+    
+    ## Contributing
+    Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+    
+    ## License
+    MIT
+    EOT
+    "suggested_extensions" = [
+      "HashiCorp Terraform",
+      "AWS Toolkit for Visual Studio Code",
+      "GitHub Pull Requests and Issues",
+      "Rainbow CSV",
+    ]
+  }
+}
